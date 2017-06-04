@@ -8,7 +8,8 @@
 import scrapy
 
 
-class CrawlItem(scrapy.Item):
+class BookItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    link = scrapy.Field()
+    book_name = scrapy.Field()
+    douban_link = scrapy.Field()
